@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - cyberbyte</title>
+    <link rel="shortcut icon" href="../images/cyberbyte.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<link rel="stylesheet" href="signup.css">
+<body>
+    <div class="wrapper">
+
+        <div class="login-box">
+          <form action="signup.php" method="post">
+            <h2>Register</h2>
+      
+            <div class="input-box">
+              <span class="icon">
+                <i class="ri-mail-fill"></i>
+              </span>
+              <input type="email" required name="email">
+              <label>Enter new email address</label>
+            </div>
+      
+            <div class="input-box">
+              <span class="icon">
+                <i class="ri-lock-fill"></i>
+              </span>
+              <input type="password" required name="password">
+              <label>Create Password</label>
+            </div>
+
+            <a href="../login/terms.html" class="check">
+              <input type="checkbox" required>
+              <label for="">Terms & Conditions.</label>
+            </a>
+
+            <button type="submit" name="login">Signup</button>
+            <h4 class="link">Alredy have an Account..! - <a href="../login/login.html">Login Now</a></h4>
+          </form>
+        </div>
+      
+      </div>
+
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+  </script>
+</body>
+</html>

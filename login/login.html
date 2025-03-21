@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Byte - Log In</title>
+    <link rel="shortcut icon" href="../images/cyberbyte.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="login-box">
+      <form action="login.php" method="post">
+        <h2>Login</h2>
+  
+        <div class="input-box">
+          <span class="icon">
+            <i class="ri-mail-fill"></i>
+          </span>
+          <input type="email" required name="email" autocomplete="off">
+          <label>Email</label>
+        </div>
+  
+        <div class="input-box">
+          <span class="icon">
+            <i class="ri-lock-fill"></i>
+          </span>
+          <input type="password" required name="password" autocomplete="off">
+          <label>Password</label>
+        </div>
+
+        <a href="terms.html" class="check">
+          <input type="checkbox" required>
+          <label for="">Terms & Conditions.</label>
+        </a>
+  
+        <button type="submit" name="signup">Login</button>
+  
+        <div class="register-link">
+          <p>Don't have an account? <a href="../signup/signup.html">Register</a></p>
+        </div>
+      </form>
+    </div>
+  
+  </div>
+
+<script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Jost', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* ========== reusable CSS ============  */
+/* .section{
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+} */
+ul{
+    list-style: none;
+}
+/* ========== reusable CSS ============  */
+
+
+/* ========== header css ===========  */
+.header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background-color: #00040d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.nav_logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.welcome_c{
+    position: relative;
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.wel{
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.welcome{
+    position: relative;
+    width: 226px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid #aaa;
+}
+.welcome .ad_name{
+    width: max-content;
+    color: #dbdbdb;
+}
+.welcome input{
+    width: 110px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.logout_form{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.logout_form .logout{
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 1px 8px;
+    color: #000;
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+.logout_form .logout:hover{
+    background-color: #c1c1c1;
+}
+
+.welcome_c .user{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.welcome_c .user .user_icon{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.log_btn{
+    position: relative;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    color: #00040d;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.log_btn:hover{
+    background-color: #9500ff;
+    color: #fff;
+}
+/* ========== header css ===========  */
+
+/* ============ Dashboard CSS =============  */
+.menu_section{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.menu_container{
+    position: relative;
+    width: 15%;
+    height: max-content;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.menu_list{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.menu_item button{
+    position: relative;
+    width: 100%;
+    margin: 0 0 6px 0;
+    padding: 16px;
+    cursor: pointer;
+    background-color: #bfbfbf;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    text-align: start;
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+.menu_item button:hover{
+    background-color: #7a7a7a;
+    color: #fff;
+}
+
+/* =============  */
+.show_container{
+    position: relative;
+    width: 80%;
+    height: 450px;
+    background-color: whitesmoke;
+    border: 1px solid #aaa;
+    padding: 10px 10px;
+}
+.head_bar h1{
+    position: relative;
+    font-size: 38px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.dash_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 16px 5px;
+    overflow: hidden;
+}
+.all_details{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.customer_info,
+.product_info,
+.order_info,
+.detail_info{
+    position: relative;
+    width: 24%;
+    height: max-content;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.customer_info{
+    background-color: #2183d9;
+    border: 1px solid #2183d9;
+}
+.product_info{
+    background-color: #e45a66;
+    border: 1px solid #e45a66;
+}
+.order_info{
+    background-color: #838383;
+    border: 1px solid #838383;
+}
+.detail_info{
+    background-color: #17c964;
+    border: 1px solid #17c964;
+}
+
+.info_container{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+}
+.info_container i{
+    font-size: 60px;
+    color: #fff;
+}
+.details{
+    text-align: center;
+    color: #fff;
+}
+.details h1{
+    font-size: 28px;
+}
+.details p{
+    font-size: 18px;
+}
+.detail_btn{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 20px;
+    border-radius: 0 0 8px 8px;
+    background: #e5e5e5;
+}
+.detail_btn button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.detail_btn:hover{
+    border: 1px solid #9f9f9f;
+}
+.detail_btn i{
+    color: rgb(25, 25, 101);
+}
+
+/* ============ Dashboard CSS =============  */
+
+/* ============== customer css ==============  */
+.customer_container{
+    position: relative;
+    width: 80%;
+    height: max-content;
+    overflow: hidden;
+}
+.customer_content{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background-color: whitesmoke;
+    border: 1px solid #aaa;
+    overflow: hidden;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.page-header{
+    font-size: 36px;
+    font-weight: 500;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+}
+
+.search_container{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+    padding: 0 20px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 14px;
+}
+.form1{
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+}
+.form2{
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.form1 input{
+    width: 60%;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    outline: none;
+    padding: 0 10px; 
+}
+.go_btn{
+    position: relative;
+    padding: 3px 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #9500ff;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s ease;
+}
+.go_btn:hover{
+    background-color: #9e35ea;
+    color: #fff;
+}
+
+.go_btn1{
+    position: relative;
+    padding: 3px 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #e45a66;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s ease;
+}
+.go_btn1:hover{
+    background-color: #ed4251;
+    color: #fff;
+}
+
+.add_container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cus_add_btn{
+    position: relative;
+    width: max-content;
+    margin: 20px 0;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.cus_add_btn button{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #0c9045;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.cus_add_btn1 button{
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #0c4c90;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.cus_add_btn2 button{
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #dd1010;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.cus_add_btn button i{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.table_container{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow-x: scroll;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 6px;
+}
+.table_content{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: scroll;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+.table_container table tbody tr .orderImgbox{
+    width: 5%;
+    height: 5%;
+    overflow: hidden;
+    text-align: center;
+}
+.table_container table tbody tr .orderImgbox img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.table_content table tbody tr .tdImgbox{
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
+    text-align: center;
+}
+.table_content table tbody tr .tdImgbox img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.table_content table tbody tr .detailImgbox{
+    width: 2%;
+    height: 2%;
+    overflow: hidden;
+    text-align: center;
+}
+.table_content table tbody tr .detailImgbox img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+/* ============== customer css ==============  */
+
+/* ================ footer CSS ================  */
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: 50px;
+    overflow: hidden;
+}
+.footer_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #aaa;
+    padding: 30px 0 0 60px;
+}
+.footer_container h4{
+    font-size: 17px;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+.footer_container h4 b{
+    color: #545454;
+    font-weight: 500;
+}
+/* ================ footer CSS ================  */

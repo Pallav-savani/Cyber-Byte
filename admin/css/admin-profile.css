@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: url("../admin-images/admin-back.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.head_logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.user{
+    position: relative;
+    width: max-content;
+    height: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: #fff;
+    transition: .3s ease;
+}
+.user i{
+    color: #fff;
+    font-size: 26px;
+}
+.user:hover{
+    color: #c4c4c4;
+}
+
+.profile_section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1{
+    position: relative;
+    width: 450px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+.head{
+    position: relative;
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    column-gap: 5px;
+}
+.head i{
+    font-size: 24px;
+    color: #aaa;
+}
+.form1{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 6px;
+}
+.email,
+.passw{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    position: relative;
+    width: 28%;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #eee;
+    font-weight: 500;
+}
+.field{
+    position: relative;
+    width: 70%;
+    height: 36px;
+    border-radius: 20px;
+    padding: 0 14px;
+    transition: .3s ease;
+    background-color: rgba(0,0,0,0.2);
+    outline: none;
+    border: none;
+}
+input[type="text"]{
+    font-size: 18px;
+    color: #fff;
+}
+.field:hover{
+    border: 1px solid #eee;
+}
+
+.form2{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logout{
+    position: relative;
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #eb5461;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.logout:hover{
+    background-color: #dc3e46;
+}
+.homeButton{
+    position: relative;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+.homeButton:hover{
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+        outline: none;
+    }
+    .profile{
+        top: 50px;
+    }
+    .email,
+    .passw{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: max-content;
+        padding: 4px 0;
+    }
+    .name,
+    .field{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .field{
+        height: 40px;
+        border: 1px solid #aaa;
+    }
+}

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background-color: rgba(0,0,0,0.07);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* ========== reusable CSS ============  */
+/* .section{
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+} */
+ul{
+    list-style: none;
+}
+/* ========== reusable CSS ============  */
+
+
+/* ========== header css ===========  */
+.header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #00040d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.nav_logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.user{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.user .user_icon{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.log_btn{
+    position: relative;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    color: #00040d;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.log_btn:hover{
+    background-color: #9500ff;
+    color: #fff;
+}
+/* ========== header css ===========  */
+
+/* ============ Dashboard CSS =============  */
+.menu_section{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.menu_container{
+    position: relative;
+    width: 15%;
+    height: max-content;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.menu_list{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.menu_item button{
+    position: relative;
+    width: 100%;
+    margin: 0 0 6px 0;
+    padding: 16px;
+    cursor: pointer;
+    background-color: #bfbfbf;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    text-align: start;
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+.menu_item button:hover{
+    background-color: #7a7a7a;
+    color: #fff;
+}
+
+/* ============ add product css ============  */
+.from_container{
+    position: relative;
+    width: 80%;
+    height: max-content;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.from_content{
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.from_container h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.input_content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.input_id{
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.input_id label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input_id input{
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    height: 34px;
+    padding: 0 10px;
+}
+
+.input-box{
+    position: relative;
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.input-box label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-box input{
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    height: 34px;
+    padding: 0 10px;
+}
+.add_pro{
+    position: relative;
+    width: max-content;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #e45a66;
+    color: #fff;
+    margin-top: 10px;
+    transition: .3s ease;
+}
+.add_pro:hover{
+    background-color: #e73e4c;
+    color: #fff;
+}
+.del_pro{
+    position: relative;
+    width: 14%;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #e45a66;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.input-box1{
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.input-box1 label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-box1 input{
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.upload{
+    position: relative;
+    width: 76%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    row-gap: 5px;
+}
+.upload label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.upload input{
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* ============ add product css ============  */
+
+/* ================ footer CSS ================  */
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: 50px;
+    overflow: hidden;
+}
+.footer_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #aaa;
+    padding: 30px 0 0 60px;
+}
+.footer_container h4{
+    font-size: 17px;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+.footer_container h4 b{
+    color: #545454;
+    font-weight: 500;
+}
+/* ================ footer CSS ================  */
+
